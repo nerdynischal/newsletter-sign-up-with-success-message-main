@@ -1,0 +1,24 @@
+@use "../utilities" as u;
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: var(--color-blue-800);
+    font-weight: 700;
+    font-size: u.rem(14);
+    margin-bottom: u.rem(10);
+  }
+
+  input {
+    padding: u.rem(20);
+    border-radius: u.rem(8);
+    font-size: u.rem(16);
+    border: 2px solid var(--color-grey-100);
+
+    &::placeholder {
+      color: var(--color-grey);
+    }
+  }
+}

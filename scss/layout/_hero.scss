@@ -1,0 +1,39 @@
+@use "../utilities" as u;
+.landing-hero {
+  width: 100vw;
+}
+
+.hero-img {
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.content {
+  padding: u.rem(32) u.rem(24);
+  display: flex;
+  flex-direction: column;
+  gap: u.rem(20);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  font-size: u.rem(16);
+  line-height: 1.5;
+  color: var(--color-blue-700);
+  padding-left: u.rem(32);
+  margin-bottom: u.rem(16);
+  position: relative;
+}
+
+li::before {
+  content: url("../../assets/images/icon-list.svg");
+  left: 0;
+  right: 0;
+  position: absolute;
+}

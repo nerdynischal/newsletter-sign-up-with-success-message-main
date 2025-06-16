@@ -3,17 +3,28 @@
 @font-face {
   font-family: "Roboto";
   src: url("../assets/fonts/Roboto-Regular.ttf") format("ttf");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
   src: url("../assets/fonts/Roboto-Bold.ttf") format("ttf");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: u.rem(40);
+  color: var(--color-blue-700);
+}
+
+.tagline {
+  font-size: u.rem(16);
+  line-height: 1.5;
+  color: var(--color-blue-700);
 }

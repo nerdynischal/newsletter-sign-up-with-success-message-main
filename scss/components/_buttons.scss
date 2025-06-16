@@ -1,1 +1,16 @@
 @use "../utilities" as u;
+
+button {
+  text-align: center;
+  width: 100%;
+  padding: u.rem(20);
+  border: none;
+  border-radius: u.rem(8);
+  margin-top: u.rem(24);
+  cursor: pointer;
+  background: var(--color-blue-800);
+  color: var(--color-white);
+
+  font-weight: 500;
+  font-size: u.rem(16);
+}

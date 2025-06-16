@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -18,21 +17,48 @@
     </title>
   </head>
   <body>
-    <!-- Sign-up form start -->
+    <section class="landing-hero">
+      <div class="hero-img">
+        <img
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="illustration abstract"
+        />
+      </div>
 
-    Stay updated! Join 60,000+ product managers receiving monthly updates on:
-    Product discovery and building what matters Measuring to ensure updates are
-    a success And much more! Email address email@company.com Subscribe to
-    monthly newsletter
-
-    <!-- Sign-up form end -->
+      <div class="content">
+        <h1>Stay updated!</h1>
+        <div class="tagline">
+          Join 60,000+ product managers receiving monthly updates on:
+        </div>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form class="myForm" action="/submit" method="post">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@company.com"
+            required
+            autocomplete="email"
+          />
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </section>
 
     <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
-
+    <!-- <div class="success-message-screen">
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to ash@loremcompany.com. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <button>Dismiss message</button>
+    </div> -->
     <!-- Success message end -->
 
     <script src="scripts/main.js"></script>
