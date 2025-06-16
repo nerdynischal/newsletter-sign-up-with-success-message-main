@@ -16,6 +16,7 @@
     border-radius: u.rem(8);
     font-size: u.rem(16);
     border: 2px solid var(--color-grey-100);
+    cursor: pointer;
 
     &::placeholder {
       color: var(--color-grey);

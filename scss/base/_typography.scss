@@ -21,6 +21,9 @@ body {
 h1 {
   font-size: u.rem(40);
   color: var(--color-blue-700);
+  @include u.breakpoint(medium) {
+    font-size: u.rem(52);
+  }
 }
 
 .tagline {

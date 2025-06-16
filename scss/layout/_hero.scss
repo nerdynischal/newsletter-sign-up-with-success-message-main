@@ -1,12 +1,45 @@
 @use "../utilities" as u;
 .landing-hero {
   width: 100vw;
+  max-width: u.rem(850);
+  max-height: u.rem(800);
+
+  @include u.breakpoint(medium) {
+    width: 80vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: white;
+    padding: u.rem(16);
+    gap: u.rem(16);
+    border-radius: u.rem(16);
+  }
 }
 
 .hero-img {
+  width: 100%;
+
   img {
     object-fit: cover;
     width: 100%;
+  }
+
+  @include u.breakpoint(medium) {
+    max-width: 50%;
+  }
+}
+
+.mobile-image {
+  display: initial;
+  @include u.breakpoint(medium) {
+    display: none;
+  }
+}
+
+.desktop-image {
+  display: none;
+  @include u.breakpoint(medium) {
+    display: initial;
   }
 }
 
@@ -15,6 +48,10 @@
   display: flex;
   flex-direction: column;
   gap: u.rem(20);
+
+  @include u.breakpoint(medium) {
+    gap: u.rem(16);
+  }
 }
 
 ul {

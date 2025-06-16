@@ -1,1 +1,11 @@
 @use "../utilities" as u;
+
+body {
+  @include u.breakpoint(medium) {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-blue-700);
+  }
+}
