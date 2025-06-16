@@ -13,4 +13,14 @@ button {
 
   font-weight: 500;
   font-size: u.rem(16);
+
+  &:hover {
+    background: linear-gradient(
+      45deg,
+      var(--color-primary-red),
+      var(--color-primary-orange)
+    );
+
+    box-shadow: u.rem(2) u.rem(16) u.rem(24) var(--color-primary-alpha);
+  }
 }
