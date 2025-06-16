@@ -2,17 +2,22 @@
 .landing-hero {
   width: 100vw;
   max-width: u.rem(850);
-  max-height: u.rem(800);
 
   @include u.breakpoint(medium) {
     width: 80vw;
     display: flex;
-    flex-direction: row-reverse;
+
+    flex-direction: column;
     align-items: center;
     background: white;
     padding: u.rem(16);
     gap: u.rem(16);
     border-radius: u.rem(16);
+  }
+
+  @include u.breakpoint(large) {
+    max-height: u.rem(800);
+    flex-direction: row-reverse;
   }
 }
 
@@ -24,7 +29,7 @@
     width: 100%;
   }
 
-  @include u.breakpoint(medium) {
+  @include u.breakpoint(large) {
     max-width: 50%;
   }
 }
@@ -36,9 +41,21 @@
   }
 }
 
+.tablet-image {
+  display: none;
+
+  @include u.breakpoint(medium) {
+    display: initial;
+  }
+  @include u.breakpoint(large) {
+    display: none;
+  }
+}
+
 .desktop-image {
   display: none;
-  @include u.breakpoint(medium) {
+
+  @include u.breakpoint(large) {
     display: initial;
   }
 }
