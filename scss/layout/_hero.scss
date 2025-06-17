@@ -1,7 +1,7 @@
 @use "../utilities" as u;
 .landing-hero {
   width: 100vw;
-  max-width: u.rem(850);
+  max-width: u.rem(880);
 
   @include u.breakpoint(medium) {
     width: 82vw;
