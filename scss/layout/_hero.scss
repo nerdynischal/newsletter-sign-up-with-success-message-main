@@ -4,7 +4,7 @@
   max-width: u.rem(850);
 
   @include u.breakpoint(medium) {
-    width: 80vw;
+    width: 82vw;
     display: flex;
 
     flex-direction: column;
@@ -86,7 +86,7 @@ li {
 }
 
 li::before {
-  content: url("../../assets/images/icon-list.svg");
+  content: url("../assets/images/icon-list.svg");
   left: 0;
   right: 0;
   position: absolute;
