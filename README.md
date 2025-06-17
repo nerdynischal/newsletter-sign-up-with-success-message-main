@@ -49,8 +49,6 @@ Users should be able to:
 - Sass/SCSS
 - JavaScript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 Practice with designing and developing forms using HTML, CSS & JS. No server to send the data too so used local storage to mimic the behaviour for this practice project.
