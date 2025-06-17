@@ -28,8 +28,7 @@ function validateEmail(email) {
 }
 
 function openSuccessPage() {
-  window.location.href =
-    "newsletter-sign-up-with-success-message-main/success.html";
+  window.location.href = "/success.html";
 }
 
 function resetInputField() {
