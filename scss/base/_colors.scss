@@ -1,14 +1,14 @@
 :root {
   /* Primary */
   --color-primary-red: hsl(4, 100%, 67%);
-  --color-primary-red-100: hsl(6, 100%, 96%);
-  --color-primary-orange: hsl(24, 100%, 53%);
-  --color-primary-alpha: hsla(24, 100%, 53%, 0.459);
+  --color-primary-red-100: hsl(6, 100%, 96%); //new
+  --color-primary-orange: hsl(24, 100%, 53%); //new
+  --color-primary-alpha: hsla(24, 100%, 53%, 0.459); //new
 
   /* Neutral */
   --color-blue-800: hsl(234, 29%, 20%);
   --color-blue-700: hsl(235, 18%, 26%);
   --color-grey: hsl(0, 0%, 58%);
-  --color-grey-100: hsl(0, 0%, 82%);
+  --color-grey-100: hsl(0, 0%, 82%); //new
   --color-white: hsl(0, 0%, 100%);
 }

@@ -1,8 +1,7 @@
-const email = document.getElementById("email");
+const email = document.getElementById("email"); //input field
 const placeholder = document.querySelector("input[type=email]");
 const submitButton = document.getElementById("submitButton");
 const errorMsg = document.querySelector(".error");
-const dismissButton = document.querySelector(".dismiss-button");
 
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -13,8 +12,9 @@ submitButton.addEventListener("click", (e) => {
     email.style.background = "var(--color-primary-red-100)";
     placeholder.style.setProperty("--color-grey", "--color-primary-red");
   } else {
+    localStorage.setItem("myEmail", email.value);
     resetInputField();
-    openPage();
+    openSuccessPage();
   }
 });
 
@@ -27,8 +27,8 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-function openPage() {
-  window.location.href = "/submit.html";
+function openSuccessPage() {
+  window.location.href = "/success.html";
 }
 
 function resetInputField() {
