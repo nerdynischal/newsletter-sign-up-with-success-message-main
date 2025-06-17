@@ -28,7 +28,7 @@ function validateEmail(email) {
 }
 
 function openSuccessPage() {
-  window.location.href = "https://nerdynischal.github.io/success.html";
+  window.location.href = "success.html";
 }
 
 function resetInputField() {
