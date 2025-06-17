@@ -26,7 +26,8 @@ h1 {
   }
 }
 
-.tagline {
+.tagline,
+p {
   font-size: u.rem(16);
   line-height: 1.5;
   color: var(--color-blue-700);

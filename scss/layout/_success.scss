@@ -1,0 +1,34 @@
+@use "../utilities" as u;
+
+.success-message-screen {
+  padding: u.rem(64) u.rem(32);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: u.rem(42);
+  height: 100vh;
+
+  @include u.breakpoint(medium) {
+    width: u.rem(500);
+    height: auto;
+    background: white;
+    padding: u.rem(52);
+    gap: u.rem(16);
+    border-radius: u.rem(24);
+  }
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  gap: u.rem(28);
+  padding-top: u.rem(64);
+
+  @include u.breakpoint(medium) {
+    padding-top: 0;
+  }
+}
+
+.email-address {
+  font-weight: 600;
+}

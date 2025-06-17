@@ -46,8 +46,12 @@
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
-        <form class="myForm" action="/submit" method="post">
-          <label for="email">Email address</label>
+        <form class="myForm" action="/" method="post">
+          <div class="email-label">
+            <label for="email">Email address</label>
+            <span class="error">Valid email required</span>
+          </div>
+
           <input
             type="email"
             id="email"
@@ -56,21 +60,12 @@
             required
             autocomplete="email"
           />
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <button id="submitButton" type="submit">
+            Subscribe to monthly newsletter
+          </button>
         </form>
       </div>
     </section>
-
-    <!-- Success message start -->
-    <!-- <div class="success-message-screen">
-      <h1>Thanks for subscribing!</h1>
-      <p>
-        A confirmation email has been sent to ash@loremcompany.com. Please open
-        it and click the button inside to confirm your subscription.
-      </p>
-      <button>Dismiss message</button>
-    </div> -->
-    <!-- Success message end -->
 
     <script src="scripts/main.js"></script>
   </body>
